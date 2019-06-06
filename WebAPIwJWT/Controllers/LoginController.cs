@@ -20,7 +20,7 @@
         }
 
         [HttpGet]
-        [Route("echoPing")]
+        [Route("echoUser")]
         public IHttpActionResult EchoUser()
         {
             var identity = Thread.CurrentPrincipal.Identity;

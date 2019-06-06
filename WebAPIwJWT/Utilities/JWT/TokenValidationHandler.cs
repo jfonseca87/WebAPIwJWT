@@ -54,8 +54,8 @@
                 JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
                 TokenValidationParameters validationParameters = new TokenValidationParameters
                 {
-                    ValidateAudience = true,
-                    ValidateIssuer = true,
+                    ValidateAudience = false,
+                    ValidateIssuer = false,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     LifetimeValidator = this.LifetimeValidator,
